@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Transitions</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.min.css">
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet'/>
+</head>
+
+
+<body>
+
+	<div id="main">
+
+		<!-- Header -->
+		<div id="spiderBox" class="container-fluid">
+			<img id="spiderHeader" class="spider" src="imgs/Spider-2.jpg" alt="Spider">
+		</div>	
+
+		<div id="arrowCont">
+			<img id="arrowDown" class="arrow closed" src="imgs/arrow-down.png">
+		</div>
+
+		<!-- Map -->
+		<div id="mapBox" class="container-fluid">
+			<div id='map'></div>
+		</div>
+
+		<!-- Form Bar -->
+		<div id="anchor" class="botBorder">
+			<form id="myForm" class="form-inline">
+
+			    <label class="sr-only" for="select1">Number of Victims</label>
+			    <select class="form-control inputs" id="select1">
+			    	<option>Number of Victims</option>
+					<option value="1">1 person</option>
+					<option value="2">2 people</option>
+					<option value="3">3 people</option>
+					<option value="4">4 people</option>
+					<option value="5">5 people</option>
+					<option value="6">6 people</option>
+					<option value="7">7 people</option>
+					<option value="8">8 people</option>
+					<option value="9">9 people</option>
+					<option>10+ contact venue for event hire options</option>
+			    </select>
+
+		     	<label class="sr-only" for="select2">Nights Imprisoned</label>
+			    <select class="form-control inputs" id="select2">
+			    	<option>Nights Imprisoned</option>
+					<option value="1">1 night</option>
+					<option value="2">2 nights</option>
+					<option value="3">3 nights</option>
+					<option value="4">4 nights</option>
+					<option value="5">5 nights</option>
+					<option value="6">6 nights</option>
+					<option value="7">7 nights</option>
+					<option value="8">8 nights</option>
+					<option value="9">9 nights</option>
+					<option value="10">10 nights</option>
+					<option value="11">11 nights</option>
+					<option value="12">12 nights</option>
+					<option value="13">13 nights</option>
+					<option value="14">14 nights</option>
+					<option value="15">15 nights</option>
+					<option>16+ contact venue for long stay options</option>
+			    </select>
+
+			    <button id="subBtn" type="submit" class="btn btn-primary inputs">Submit</button>
+
+		  	</form>			
+		</div>
+
+	</div>
+
+	
+	<!-- JS -->
+    <script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+
+  	 <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.1.1/mapbox-gl-directions.js'></script>
+  	 <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.1.1/mapbox-gl-directions.css' type='text/css' />
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+</html>
